@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+    @apply flex h-12 w-full px-7 hover:bg-gray-700 py-3
+}
