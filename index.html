@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Youtube</title>
 </head>
-<body class="bg-gray-800">
-    <header class="flex content-center justify-between p-5">
+<body class="bg-clank-100">
+    <header class="fixed flex content-center justify-between p-5 w-full bg-clank-100">
         <div class="flex justify-between">
             <button class="ml-3"><i class="fas fa-bars text-xl text-white"></i></button>
             <button class="ml-3"><i class="fab fa-youtube text-3xl text-red-700"></i></button>
             <h1 class="ml-3 text-xl text-white">YouTube</h1>
         </div>
-        <div action="" class="flex flex-wrap">
-            <form class="bg-black h-8 flex mr-3">
-                <input type="text" class="" placeholder="buscar">
-                <label for="" class="flex"><i class="fas fa-search text-base text-white"></i></label>
+        <div action="" class="flex">
+            <form class="bg-clank-400 h-8 flex w-80 mr-3">
+                <input type="text" class="bg-black w-10/12" placeholder="buscar">
+                <label for="" class="content-center justify-center"><i class="fas fa-search text-base text-white"></i></label>
             </form>
             <button class="border rounded-full w-8 h-8 border-black bg-black"><i class="fas fa-microphone text-base text-white"></i></button>
         </div>
@@ -29,63 +29,226 @@
             <a href="#" class="ml-3"><i class="far fa-user-circle text-xl text-white"></i></a>
         </div>
     </header>
-    <section class="fixed flex-col w-1/6 text-white text-sm h-full">
-        <div class="flex-col border-b-2 w-full">
-            <ul>
-                <li class="link"><a href=""><i class="fas fa-home text-lg text-white mr-5"></i>Inicio</a></li>
-                <li><a href=""><i class="far fa-compass text-xl text-white"></i>Explorar</a></li>
-                <li><a href=""><i class="fas fa-ad"></i>Suscripciones</a></li>
-                <li><a href=""><i class="far fa-caret-square-right"></i>Originals</a></li>
-                <li><a href=""><i class="far fa-play-circle"></i>Youtube Music</a></li>
+    <section class="fixed flex-col w-60 text-gray-300 text-sm overflow-y-scroll box-content mr-4 mt-14 max-h-full">
+        <div class="flex-col border-b w-full mt-3">
+            <ul class="mb-3">
+                <li class="link"><a href=""><i class="fas fa-home text-xl mr-5"></i>Inicio</a></li>
+                <li class="link"><a href=""><i class="far fa-compass text-xl mr-5"></i>Explorar</a></li>
+                <li class="link"><a href=""><i class="fas fa-ad text-xl mr-5"></i>Suscripciones</a></li>
+                <li class="link"><a href=""><i class="far fa-caret-square-right text-xl mr-5"></i>Originals</a></li>
+                <li class="link"><a href=""><i class="far fa-play-circle text-xl mr-5"></i>Youtube Music</a></li>
             </ul>
-            <button class="flex h-12 w-full px-7 hover:bg-gray-700 py-3"><i class="fas fa-home text-lg text-white mr-5"></i>Inicio</button>
-            <button class="flex"><i class="far fa-compass text-xl text-white"></i><p>Explorar</p></button>
-            <button class="flex"><i class="fas fa-ad"></i><p>Suscripciones</p></button>
-            <button class="flex"><i class="far fa-caret-square-right"></i><p>Originals</p></button>
-            <button class="flex"><i class="far fa-play-circle"></i><p>Youtube Music</p></button>
         </div>
-        <div>
-            <button class="flex"><i class="fas fa-book"></i><p>Biblioteca</p></button>
-            <button class="flex"><i class="fas fa-history"></i><p>Historial</p></button>
-            <button class="flex"><i class="fab fa-youtube-square"></i><p>Mis videos</p></button>
-            <button class="flex"><i class="far fa-clock"></i><p>Ver mas tarde</p></button>
-            <button class="flex"><i class="fas fa-download"></i><p>Descargas</p></button>
-            <button class="flex"><i class="far fa-thumbs-up"></i><p>Videos que me gustan</p></button>
-            <button class="flex"><i class="fas fa-angle-down"></i><p>Mostrar mas</p></button>
+        <div class="flex-col border-b w-full mt-3">
+            <ul class="mb-3">
+                <li class="link"><a href=""><i class="fas fa-book text-lg text-white mr-5"></i>Biblioteca</a></li>
+                <li class="link"><a href=""><i class="fas fa-history text-lg text-white mr-5"></i>Historial</a></li>
+                <li class="link"><a href=""><i class="ffab fa-youtube-square text-lg text-white mr-5"></i>Mis videos</a></li>
+                <li class="link"><a href=""><i class="far fa-clock text-lg text-white mr-5"></i>Ver mas tarde</a></li>
+                <li class="link"><a href=""><i class="fas fa-download text-lg text-white mr-5"></i>Descargas</a></li>
+                <li class="link"><a href=""><i class="far fa-thumbs-up text-lg text-white mr-5"></i>Videos que me gustan</a></li>
+                <li class="link"><i class="fas fa-angle-down text-lg text-white mr-5"></i>Mostrar mas</li>
+            </ul>
         </div>
-        <div>
-            <span>MAS DE YOUTUBE</span>
-            <button class="flex"><i class="fas fa-gamepad"></i><p>Videojuegos</p></button>
-            <button class="flex"><i class="fas fa-wifi"></i><p>Directo</p></button>
-            <button class="flex"><i class="far fa-lightbulb"></i><p>Aprendizaje</p></button>
-            <button class="flex"><i class="fas fa-trophy"></i><p>Deportes</p></button>
+        <div class="flex-col border-b w-full mt-3">
+            <p class="h-9 w-full pl-5 pt-2">MAS DE YOUTUBE</p>
+            <ul class="mb-3">
+                <li class="link"><a href=""><i class="fas fa-gamepad text-lg text-white mr-5"></i>Videojuegos</a></li>
+                <li class="link"><a href=""><i class="fas fa-wifi text-lg text-white mr-5"></i>Directo</a></li>
+                <li class="link"><a href=""><i class="far fa-lightbulb text-lg text-white mr-5"></i>Aprendizaje</a></li>
+                <li class="link"><a href=""><i class="fas fa-trophy text-lg text-white mr-5"></i>Deportes</a></li>
+            </ul>
         </div>
-        <div>
-            <button class="flex"><i class="fas fa-cog"></i><p>Configuración</p></button>
-            <button class="flex"><i class="far fa-flag"></i><p>Historial de denuncias</p></button>
-            <button class="flex"><i class="far fa-question-circle"></i><p>Ayuda</p></button>
-            <button class="flex"><i class="fas fa-exclamation-triangle"></i><p>Enviar sugerencias</p></button>
+        <div class="flex-col border-b mt-3 w-full">
+            <ul class="mb-3">
+                <li class="link"><a href=""><i class="fas fa-cog text-lg text-white mr-5"></i>Configuración</a></li>
+                <li class="link"><a href=""><i class="far fa-flag text-lg text-white mr-5"></i>Historial de denuncias</a></li>
+                <li class="link"><a href=""><i class="far fa-question-circle text-lg text-white mr-5"></i>Ayuda</a></li>
+                <li class="link"><a href=""><i class="fas fa-exclamation-triangle text-lg text-white mr-5"></i>Enviar sugerencias</a></li>
+            </ul>
         </div>
-        <div class="flex">
-            <a href="">Informacion</a>
-            <a href="">Prensa</a>
-            <a href="">Derechos de autor</a>
-            <a href="">Contactar</a>
-            <a href="">Creadores</a>
-            <a href="">Publicidad</a>
-            <a href="">Desarrolladores</a>
+        <div class="flex my-3 px-5">
+            <ul>
+                <li class="inline-block"><a href="">Informacion</a></li>
+                <li class="inline-block"><a href="">Prensa</a></li>
+                <li class="inline-block"><a href="">Derechos de autor</a></li>
+                <li class="inline-block"><a href="">Contactar</a></li>
+                <li class="inline-block"><a href="">Creadores</a></li>
+                <li class="inline-block"><a href="">Publicidad</a></li>
+                <li class="inline-block"><a href="">Desarrolladores</a></li>
+            </ul>
         </div>
-        <div class="flex">
-            <a href="">Términos</a>
-            <a href="">Privacidad</a>
-            <a href="">Politica y seguridad</a>
-            <a href="">Como funciona Youtube</a>
-            <a href="">Probar funciones nuevas</a>
+        <div class="flex my-3 px-5">
+            <ul>
+                <li class="inline-block"><a href="">Términos</a></li>
+                <li class="inline-block"><a href="">Privacidad</a></li>
+                <li class="inline-block"><a href="">Politica y seguridad</a></li>
+                <li class="inline-block"><a href="">Como funciona Youtube</a></li>
+                <li class="inline-block"><a href="">Probar funciones nuevas</a></li>
+            </ul>  
         </div>
-        <p>© 2021 Google LLC</p>
+        <div class="flex mb-3">
+            <p class="h-9">© 2021 Google LLC</p>
+        </div>
     </section>
-    <main class="float-right flex-col w-5/6 bg-red-500">
-        hola
+    <main class="flex-col ml-60 bg-black">
+        <div class="fixed text-white overflow-x-scroll h-11 border-t border-b border-clank-500 mt-14">
+            <button class="bg-clank-400 rounded-full h-9 px-4 mr-3">Todo</button>
+            <button class="button">Música</button>
+            <button class="button">Hojas de estilo en cascada</button>
+            <button class="button">Programación</button>
+            <button class="button">Criptomonedas</button>
+            <button class="button">JavaScript</button>
+            <button class="button">Franco Escamilla</button>
+            <button class="button">Comedia</button>
+        </div>
+        <div class="bg-clank-200 p-5 grid grid-cols-4 gap-5 text-yellow-50 pt-32">
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" autoplay muted controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+            <div class="">
+                <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
+                <div class="flex flex-row gap-2 justify-start mb-5">
+                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <div class="">
+                       <p class="text-xl">Proyecto JavaScript </p> 
+                        <a href="" class="text-sm">Bluuweb</a>
+                       <p class="text-xs">329.550 visualizaciones</p>
+                       <p class="text-xs">hace 3 años</p>
+                   </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 </body>
 </html>

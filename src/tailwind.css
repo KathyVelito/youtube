@@ -1,7 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .link {
-    @apply flex h-12 w-full px-7 hover:bg-gray-700 py-3
+    @apply flex h-10 w-full px-5 hover:bg-gray-700 py-2
+},
+
+.button {
+    @apply bg-clank-400 rounded-full h-9 px-4 mr-3
 }
