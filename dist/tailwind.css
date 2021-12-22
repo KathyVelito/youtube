@@ -33146,7 +33146,6 @@ video {
 }
 
 .link {
-  display: flex;
   height: 2.5rem;
   width: 100%
 }
@@ -33163,6 +33162,28 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-menu {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .text-menu {
+    display: inline-block;
+  }
+}
+
+.aside {
+  margin-top: 0.75rem;
+  width: 100%;
+  flex-direction: column
+}
+
+@media (min-width: 1280px) {
+  .aside {
+    border-bottom-width: 1px;
+  }
+}
+
 .button {
   margin-right: 0.75rem;
   height: 2.25rem;
@@ -33170,7 +33191,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(51, 51, 51, var(--tw-bg-opacity));
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 1rem
 }
 
 @media (min-width: 640px) {

@@ -3,8 +3,16 @@
 @import "tailwindcss/utilities";
 
 .link {
-    @apply flex h-10 w-full px-5 hover:bg-gray-700 py-2
+    @apply h-10 w-full px-5 hover:bg-gray-700 py-2 
 },
+ 
+.text-menu {
+    @apply hidden xl:inline-block
+}
+
+.aside {
+    @apply flex-col xl:border-b w-full mt-3
+}
 
 .button {
     @apply bg-clank-400 rounded-full h-9 px-4 mr-3

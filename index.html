@@ -9,11 +9,10 @@
     <title>Youtube</title>
 </head>
 <body class="bg-clank-100">
-    <header class="fixed flex content-center justify-between p-5 w-full bg-clank-100">
+    <header class="bg-clank-100 content-center fixed flex justify-between p-4 w-full z-40">
         <div class="flex justify-between">
-            <button class="ml-3"><i class="fas fa-bars text-xl text-white"></i></button>
-            <button class="ml-3"><i class="fab fa-youtube text-3xl text-red-700"></i></button>
-            <h1 class="ml-3 text-xl text-white">YouTube</h1>
+            <button class="ml-3 hidden"><i class="fas fa-bars text-xl text-white"></i></button>
+            <a href="#" class="flex ml-3 text-xl text-white"><i class="fab fa-youtube  text-3xl text-red-700"></i><h1 class="ml-3">YOUTUBE</h1></a>
         </div>
         <div action="" class="flex">
             <form class="bg-clank-400 h-8 flex w-80 mr-3">
@@ -22,35 +21,35 @@
             </form>
             <button class="border rounded-full w-8 h-8 border-black bg-black"><i class="fas fa-microphone text-base text-white"></i></button>
         </div>
-        <div>
-            <button class="ml-3"><i class="fas fa-video text-xl text-white"></i></button>
-            <button class="ml-3"><i class="fas fa-th text-xl text-white"></i></button>
-            <button class="ml-3"><i class="far fa-bell text-xl text-white"></i></button>
-            <a href="#" class="ml-3"><i class="far fa-user-circle text-xl text-white"></i></a>
-        </div>
+        <ul class="flex">
+            <li class="mr-5"><a href=""><i class="fas fa-video text-2xl text-white"></i></a></li>
+            <li class="mr-5"><a href=""><i class="fas fa-th text-2xl text-white"></i></a></li>
+            <li class="mr-5"><a href=""><i class="far fa-bell text-2xl text-white"></i></a></li>
+            <li class="mr-5"><a href=""><i class="far fa-user-circle text-2xl text-white"></i></a></li>
+        </ul>
     </header>
-    <section class="fixed flex-col w-60 text-gray-300 text-sm overflow-y-scroll box-content mr-4 mt-14 max-h-full">
-        <div class="flex-col border-b w-full mt-3">
+    <aside class="fixed flex-col xl:flex xl:w-60 w-16 text-gray-300 text-xs sm:text-sm overflow-y-scroll box-content mr-4 mt-14 max-h-full">
+        <div class="aside">
             <ul class="mb-3">
-                <li class="link"><a href=""><i class="fas fa-home text-xl mr-5"></i>Inicio</a></li>
-                <li class="link"><a href=""><i class="far fa-compass text-xl mr-5"></i>Explorar</a></li>
-                <li class="link"><a href=""><i class="fas fa-ad text-xl mr-5"></i>Suscripciones</a></li>
-                <li class="link"><a href=""><i class="far fa-caret-square-right text-xl mr-5"></i>Originals</a></li>
-                <li class="link"><a href=""><i class="far fa-play-circle text-xl mr-5"></i>Youtube Music</a></li>
+                <li class="link my-8 xl:my-0"><a href="#"><i class="fas fa-home text-xl mr-5"></i><span class="text-menu">Inicio</span> </a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-compass text-xl mr-5"></i><span class="text-menu">Explorar</span></a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="fas fa-ad text-xl mr-5"></i><span class="text-menu">Suscripciones</span></a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-caret-square-right text-xl mr-5"></i><span class="text-menu">Originals</span></a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-play-circle text-xl mr-5"></i><span class="text-menu">Youtube Music</span></a></li>
             </ul>
         </div>
-        <div class="flex-col border-b w-full mt-3">
+        <div class="aside">
             <ul class="mb-3">
-                <li class="link"><a href=""><i class="fas fa-book text-lg text-white mr-5"></i>Biblioteca</a></li>
-                <li class="link"><a href=""><i class="fas fa-history text-lg text-white mr-5"></i>Historial</a></li>
-                <li class="link"><a href=""><i class="ffab fa-youtube-square text-lg text-white mr-5"></i>Mis videos</a></li>
-                <li class="link"><a href=""><i class="far fa-clock text-lg text-white mr-5"></i>Ver mas tarde</a></li>
-                <li class="link"><a href=""><i class="fas fa-download text-lg text-white mr-5"></i>Descargas</a></li>
-                <li class="link"><a href=""><i class="far fa-thumbs-up text-lg text-white mr-5"></i>Videos que me gustan</a></li>
-                <li class="link"><i class="fas fa-angle-down text-lg text-white mr-5"></i>Mostrar mas</li>
+                <li class="link mb-8 xl:mb-0"><a href=""><i class="fas fa-book text-lg text-white mr-5"></i><span class="text-menu">Biblioteca</span></a></li>
+                <li class="link text-menu"><a href=""><i class="fas fa-history text-lg text-white mr-5"></i><span>Historial</span></a></li>
+                <li class="link text-menu"><a href=""><i class="ffab fa-youtube-square text-lg text-white mr-5"></i><span>Mis videos</span></a></li>
+                <li class="link text-menu"><a href=""><i class="far fa-clock text-lg text-white mr-5"></i><span>Ver mas tarde</span></a></li>
+                <li class="link"><a href=""><i class="fas fa-download text-lg text-white mr-5"></i><span class="text-menu">Descargas</span></a></li>
+                <li class="link text-menu"><a href=""><i class="far fa-thumbs-up text-lg text-white mr-5"></i><span>Videos que me gustan</span></a></li>
+                <li class="link text-menu"><i class="fas fa-angle-down text-lg text-white mr-5"></i>Mostrar mas</li>
             </ul>
         </div>
-        <div class="flex-col border-b w-full mt-3">
+        <div class="aside text-menu">
             <p class="h-9 w-full pl-5 pt-2">MAS DE YOUTUBE</p>
             <ul class="mb-3">
                 <li class="link"><a href=""><i class="fas fa-gamepad text-lg text-white mr-5"></i>Videojuegos</a></li>
@@ -59,7 +58,7 @@
                 <li class="link"><a href=""><i class="fas fa-trophy text-lg text-white mr-5"></i>Deportes</a></li>
             </ul>
         </div>
-        <div class="flex-col border-b mt-3 w-full">
+        <div class="aside text-menu">
             <ul class="mb-3">
                 <li class="link"><a href=""><i class="fas fa-cog text-lg text-white mr-5"></i>Configuración</a></li>
                 <li class="link"><a href=""><i class="far fa-flag text-lg text-white mr-5"></i>Historial de denuncias</a></li>
@@ -67,7 +66,7 @@
                 <li class="link"><a href=""><i class="fas fa-exclamation-triangle text-lg text-white mr-5"></i>Enviar sugerencias</a></li>
             </ul>
         </div>
-        <div class="flex my-3 px-5">
+        <div class="hidden xl:flex my-3 px-5">
             <ul>
                 <li class="inline-block"><a href="">Informacion</a></li>
                 <li class="inline-block"><a href="">Prensa</a></li>
@@ -78,7 +77,7 @@
                 <li class="inline-block"><a href="">Desarrolladores</a></li>
             </ul>
         </div>
-        <div class="flex my-3 px-5">
+        <div class="hidden xl:flex my-3 px-5">
             <ul>
                 <li class="inline-block"><a href="">Términos</a></li>
                 <li class="inline-block"><a href="">Privacidad</a></li>
@@ -87,29 +86,31 @@
                 <li class="inline-block"><a href="">Probar funciones nuevas</a></li>
             </ul>  
         </div>
-        <div class="flex mb-3">
-            <p class="h-9">© 2021 Google LLC</p>
-        </div>
-    </section>
-    <main class="flex-col ml-60 bg-black">
-        <div class="fixed text-white overflow-x-scroll h-11 border-t border-b border-clank-500 mt-14">
-            <button class="bg-clank-400 rounded-full h-9 px-4 mr-3">Todo</button>
+        <div class="hidden xl:flex my-3">
+            <footer class="h-9">© 2021 Google LLC</footer>
+        </div>  
+    </aside>
+    <main class="flex-col xl:ml-60 ml-16 bg-black">
+        <div class="fixed bg-black flex text-white overflow-x-auto overscroll-contain w-screen h-16 border-t border-b border-clank-500 mt-16 py-3 z-40 pl-2">
+            <button class="bg-white text-black rounded-full h-10 px-4 mr-3">Todo</button>
             <button class="button">Música</button>
-            <button class="button">Hojas de estilo en cascada</button>
+            <button class="button">Hojas de estilo</button>
             <button class="button">Programación</button>
             <button class="button">Criptomonedas</button>
             <button class="button">JavaScript</button>
             <button class="button">Franco Escamilla</button>
             <button class="button">Comedia</button>
+            <button class="button">Comedia</button>
+            <button class="button">Comedia</button>
         </div>
-        <div class="bg-clank-200 p-5 grid grid-cols-4 gap-5 text-yellow-50 pt-32">
+        <div class="bg-clank-200 p-5 grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 text-yellow-50 pt-40">
             <div class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" autoplay muted controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
-                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <a href="#" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
                    <div class="">
                        <p class="text-xl">Proyecto JavaScript </p> 
-                        <a href="" class="text-sm">Bluuweb</a>
+                        <a href="#" class="text-sm">Bluuweb</a>
                        <p class="text-xs">329.550 visualizaciones</p>
                        <p class="text-xs">hace 3 años</p>
                    </div>
@@ -118,10 +119,10 @@
             <div class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
-                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <a href="#" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
                    <div class="">
                        <p class="text-xl">Proyecto JavaScript </p> 
-                        <a href="" class="text-sm">Bluuweb</a>
+                        <a href="#" class="text-sm">Bluuweb</a>
                        <p class="text-xs">329.550 visualizaciones</p>
                        <p class="text-xs">hace 3 años</p>
                    </div>
@@ -130,10 +131,10 @@
             <div class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
-                   <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
+                   <a href="#" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
                    <div class="">
                        <p class="text-xl">Proyecto JavaScript </p> 
-                        <a href="" class="text-sm">Bluuweb</a>
+                        <a href="#" class="text-sm">Bluuweb</a>
                        <p class="text-xs">329.550 visualizaciones</p>
                        <p class="text-xs">hace 3 años</p>
                    </div>
