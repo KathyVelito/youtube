@@ -15,5 +15,5 @@
 }
 
 .button {
-    @apply bg-clank-400 rounded-full h-9 px-4 mr-3
+    @apply bg-clank-400 rounded-full h-7 px-4 mr-3 text-xs
 }

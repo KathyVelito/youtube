@@ -8,37 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Youtube</title>
 </head>
-<body class="bg-clank-100">
-    <header class="bg-clank-100 content-center fixed flex justify-between p-4 w-full z-40">
-        <div class="flex justify-between">
+<body class="bg-clank-100 font-sans">
+    <header class="bg-clank-100 content-center fixed flex justify-between px-4 py-2 w-full z-40">
+        <div role="heading" class="flex justify-between">
             <button class="ml-3 hidden"><i class="fas fa-bars text-xl text-white"></i></button>
-            <a href="#" class="flex ml-3 text-xl text-white"><i class="fab fa-youtube  text-3xl text-red-700"></i><h1 class="ml-3">YOUTUBE</h1></a>
+            <a href="#" class="flex ml-3 text-xl font-semibold text-white"><i class="fab fa-youtube  text-3xl text-red-700"></i><h1 class="ml-3">Premium</h1></a>
         </div>
-        <div action="" class="flex">
-            <form class="bg-clank-400 h-8 flex w-80 mr-3">
-                <input type="text" class="bg-black w-10/12" placeholder="buscar">
-                <label for="" class="content-center justify-center"><i class="fas fa-search text-base text-white"></i></label>
+        <div role="search" class="flex justify-center w-9/12">
+            <form class="sm:bg-clank-400 h-9 flex mr-3 sm:w-8/12 w-10 border-0 rounded-sm">
+                <input type="text" class="bg-black hidden sm:inline-block pl-4 w-11/12 " placeholder="Buscar">
+                <label for="" class="flex px-4 py-2"><i class="fas fa-search text-lg flex items-center text-white"></i></label>
             </form>
             <button class="border rounded-full w-8 h-8 border-black bg-black"><i class="fas fa-microphone text-base text-white"></i></button>
         </div>
-        <ul class="flex">
-            <li class="mr-5"><a href=""><i class="fas fa-video text-2xl text-white"></i></a></li>
-            <li class="mr-5"><a href=""><i class="fas fa-th text-2xl text-white"></i></a></li>
-            <li class="mr-5"><a href=""><i class="far fa-bell text-2xl text-white"></i></a></li>
-            <li class="mr-5"><a href=""><i class="far fa-user-circle text-2xl text-white"></i></a></li>
+        <ul class="flex items-end">
+            <li class="sm:mr-5 ml-2"><a href=""><i class="fas fa-video sm:text-xl text-base text-white"></i></a></li>
+            <li class="sm:mr-5 ml-2"><a href=""><i class="fas fa-th sm:text-xl text-base text-white"></i></a></li>
+            <li class="sm:mr-5 ml-2"><a href=""><i class="far fa-bell sm:text-xl text-base text-white"></i></a></li>
+            <li><a href="sm:mr-5 ml-2"><i class="far fa-user-circle sm:text-xl text-base text-white"></i></a></li>
         </ul>
     </header>
-    <aside class="fixed flex-col xl:flex xl:w-60 w-16 text-gray-300 text-xs sm:text-sm overflow-y-scroll box-content mr-4 mt-14 max-h-full">
-        <div class="aside">
+    <aside class="fixed flex-col xl:flex xl:w-52 w-16 text-gray-300 text-xs  overflow-y-scroll box-content mr-4 mt-14 max-h-full">
+        <div role="navigation" class="aside">
             <ul class="mb-3">
-                <li class="link my-8 xl:my-0"><a href="#"><i class="fas fa-home text-xl mr-5"></i><span class="text-menu">Inicio</span> </a></li>
-                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-compass text-xl mr-5"></i><span class="text-menu">Explorar</span></a></li>
-                <li class="link mb-8 xl:mb-0"><a href="#"><i class="fas fa-ad text-xl mr-5"></i><span class="text-menu">Suscripciones</span></a></li>
-                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-caret-square-right text-xl mr-5"></i><span class="text-menu">Originals</span></a></li>
-                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-play-circle text-xl mr-5"></i><span class="text-menu">Youtube Music</span></a></li>
+                <li class="link my-8 xl:my-0"><a href="#"><i class="fas fa-home text-lg mr-5"></i><span class="text-menu">Inicio</span> </a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-compass text-lg mr-5"></i><span class="text-menu">Explorar</span></a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="fas fa-ad text-lg mr-5"></i><span class="text-menu">Suscripciones</span></a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-caret-square-right text-lg mr-5"></i><span class="text-menu">Originals</span></a></li>
+                <li class="link mb-8 xl:mb-0"><a href="#"><i class="far fa-play-circle text-lg mr-5"></i><span class="text-menu">Youtube Music</span></a></li>
             </ul>
         </div>
-        <div class="aside">
+        <div role="navigation" class="aside">
             <ul class="mb-3">
                 <li class="link mb-8 xl:mb-0"><a href=""><i class="fas fa-book text-lg text-white mr-5"></i><span class="text-menu">Biblioteca</span></a></li>
                 <li class="link text-menu"><a href=""><i class="fas fa-history text-lg text-white mr-5"></i><span>Historial</span></a></li>
@@ -49,7 +49,7 @@
                 <li class="link text-menu"><i class="fas fa-angle-down text-lg text-white mr-5"></i>Mostrar mas</li>
             </ul>
         </div>
-        <div class="aside text-menu">
+        <div role="navigation" class="aside text-menu">
             <p class="h-9 w-full pl-5 pt-2">MAS DE YOUTUBE</p>
             <ul class="mb-3">
                 <li class="link"><a href=""><i class="fas fa-gamepad text-lg text-white mr-5"></i>Videojuegos</a></li>
@@ -58,7 +58,7 @@
                 <li class="link"><a href=""><i class="fas fa-trophy text-lg text-white mr-5"></i>Deportes</a></li>
             </ul>
         </div>
-        <div class="aside text-menu">
+        <div role="navigation" class="aside text-menu">
             <ul class="mb-3">
                 <li class="link"><a href=""><i class="fas fa-cog text-lg text-white mr-5"></i>Configuración</a></li>
                 <li class="link"><a href=""><i class="far fa-flag text-lg text-white mr-5"></i>Historial de denuncias</a></li>
@@ -66,7 +66,7 @@
                 <li class="link"><a href=""><i class="fas fa-exclamation-triangle text-lg text-white mr-5"></i>Enviar sugerencias</a></li>
             </ul>
         </div>
-        <div class="hidden xl:flex my-3 px-5">
+        <div role="navigation" class="hidden xl:flex my-3 px-5">
             <ul>
                 <li class="inline-block"><a href="">Informacion</a></li>
                 <li class="inline-block"><a href="">Prensa</a></li>
@@ -77,7 +77,7 @@
                 <li class="inline-block"><a href="">Desarrolladores</a></li>
             </ul>
         </div>
-        <div class="hidden xl:flex my-3 px-5">
+        <div role="navigation" class="hidden xl:flex my-3 px-5">
             <ul>
                 <li class="inline-block"><a href="">Términos</a></li>
                 <li class="inline-block"><a href="">Privacidad</a></li>
@@ -90,21 +90,21 @@
             <footer class="h-9">© 2021 Google LLC</footer>
         </div>  
     </aside>
-    <main class="flex-col xl:ml-60 ml-16 bg-black">
-        <div class="fixed bg-black flex text-white overflow-x-auto overscroll-contain w-screen h-16 border-t border-b border-clank-500 mt-16 py-3 z-40 pl-2">
-            <button class="bg-white text-black rounded-full h-10 px-4 mr-3">Todo</button>
+    <main class="flex-col xl:ml-52 ml-16 bg-black">
+        <div role="button" class="fixed bg-black flex text-white overflow-x-auto overscroll-contain w-screen h-12 border-t border-b border-clank-500 mt-12 py-2 z-40 pl-2">
+            <button class="bg-white text-black rounded-full h-7 px-4 mr-3 text-xs">Todo</button>
             <button class="button">Música</button>
-            <button class="button">Hojas de estilo</button>
+            <button class="button">Style</button>
             <button class="button">Programación</button>
             <button class="button">Criptomonedas</button>
             <button class="button">JavaScript</button>
-            <button class="button">Franco Escamilla</button>
+            <button class="button">HTML</button>
             <button class="button">Comedia</button>
             <button class="button">Comedia</button>
             <button class="button">Comedia</button>
         </div>
         <div class="bg-clank-200 p-5 grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 text-yellow-50 pt-40">
-            <div class="">
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" autoplay muted controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="#" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -115,8 +115,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="#" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -127,8 +127,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="#" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -139,8 +139,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -151,8 +151,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -163,8 +163,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -175,8 +175,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -187,8 +187,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -199,8 +199,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -211,8 +211,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -223,8 +223,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -235,8 +235,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
-            <div class="">
+            </article>
+            <article class="">
                 <video src="./dist/video/dino.mp4" class="h-40 w-full" controls></video>
                 <div class="flex flex-row gap-2 justify-start mb-5">
                    <a href="" class="p-1"><i class="far fa-user-circle text-3xl"></i></a>
@@ -247,7 +247,8 @@
                        <p class="text-xs">hace 3 años</p>
                    </div>
                 </div>
-            </div>
+            </article>
+            
 
         </div>
     </main>
